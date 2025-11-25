@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hcm
+  annotations:
+    kubernetes.io/ingress.class: alb
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: hcm-backend
+                port:
+                  number: 3000
+
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hcm-frontend
+                port:
+                  number: 80
