@@ -17,3 +17,10 @@ spec:
           image: ghcr.io/panikaa/hcm-frontend:d0dc1e4ea04821efb4b794054030fcf429c04f0d
           ports:
             - containerPort: 80
+          env:
+            - name: API_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: hcm-config
+                  key: API_URL
+
