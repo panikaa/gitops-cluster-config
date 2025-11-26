@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: ghcr.io/panikaa/hcm-backend:latest
+        image: ghcr.io/panikaa/hcm-backend:d0dc1e4ea04821efb4b794054030fcf429c04f0d
         ports:
           - containerPort: 3000
         readinessProbe:
