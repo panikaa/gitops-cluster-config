@@ -6,7 +6,7 @@ metadata:
 spec:
   project: hcm
   source:
-    repoURL: https://github.com/<YOUR-USERNAME>/gitops-cluster-config.git
+    repoURL: https://github.com/panikaa/gitops-cluster-config.git
     targetRevision: main
     path: apps/hcm/overlays/dev
   destination:

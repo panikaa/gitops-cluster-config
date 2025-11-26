@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ghcr.io/YOUR-USERNAME/hcm-frontend:latest
+          image: ghcr.io/panikaa/hcm-frontend:latest
           ports:
             - containerPort: 80
