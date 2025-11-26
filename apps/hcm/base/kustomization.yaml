@@ -4,5 +4,6 @@ resources:
   - frontend-deployment.yaml
   - frontend-service.yaml
   - configmap.yaml
+  - secret.yaml
   - ingress.yaml
   - hpa-backend.yaml
