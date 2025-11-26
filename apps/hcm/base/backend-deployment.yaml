@@ -28,14 +28,14 @@ spec:
                 name: hcm-db
                 key: url
                 
-            - name: APP_ENV
-              valueFrom:
-                configMapKeyRef:
-                  name: hcm-config
-                  key: APP_ENV
+          - name: APP_ENV
+            valueFrom:
+              configMapKeyRef:
+                name: hcm-config
+                key: APP_ENV
 
-            - name: WORKER_INTERVAL_SECONDS
-              valueFrom:
-                configMapKeyRef:
-                  name: hcm-config
-                  key: WORKER_INTERVAL_SECONDS
+          - name: WORKER_INTERVAL_SECONDS
+            valueFrom:
+              configMapKeyRef:
+                name: hcm-config
+                key: WORKER_INTERVAL_SECONDS
