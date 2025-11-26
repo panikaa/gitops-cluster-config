@@ -12,6 +12,8 @@ spec:
       labels:
         app: hcm-frontend
     spec:
+      imagePullSecrets:
+        - name: ghcr-auth
       containers:
         - name: frontend
           image: ghcr.io/panikaa/hcm-frontend:d0dc1e4ea04821efb4b794054030fcf429c04f0d
