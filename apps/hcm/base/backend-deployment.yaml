@@ -16,7 +16,7 @@ spec:
         - name: ghcr-auth
       containers:
       - name: backend
-        image: ghcr.io/panikaa/hcm-backend:d0dc1e4ea04821efb4b794054030fcf429c04f0d
+        image: ghcr.io/panikaa/hcm-backend:e4e6d1666017b83104f2a19d6074bd8c2ed3567c
         ports:
           - containerPort: 3000
         readinessProbe:
