@@ -4,4 +4,4 @@ metadata:
   name: hcm-db
 type: Opaque
 stringData:
-  url: "postgresql://postgres:rZzq}HNfHQe9Nl?nRQ62@hcm-db.ctmi0emcu71f.eu-central-1.rds.amazonaws.com:5432/hcm"
+  url: "postgresql://postgres:postgres@your-rds-endpoint:5432/hcm"
