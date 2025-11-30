@@ -28,7 +28,7 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: hcm-db
-                key: url
+                key: DATABASE_URL
                 
           - name: APP_ENV
             valueFrom:
