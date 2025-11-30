@@ -17,6 +17,7 @@ spec:
       containers:
       - name: backend
         image: ghcr.io/panikaa/hcm-backend:e4e6d1666017b83104f2a19d6074bd8c2ed3567c
+        command: ["sh", "-c", "npx prisma migrate deploy && npm start"]
         ports:
           - containerPort: 3000
         readinessProbe:
