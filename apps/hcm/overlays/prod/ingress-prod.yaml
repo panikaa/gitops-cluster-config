@@ -12,6 +12,22 @@ spec:
     - host: prod.hcm.suramar.int
       http:
         paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: hcm-backend
+                port:
+                  number: 3000
+
+          - path: /assets
+            pathType: Prefix
+            backend:
+              service:
+                name: hcm-frontend
+                port:
+                  number: 80
+
           - path: /
             pathType: Prefix
             backend:
