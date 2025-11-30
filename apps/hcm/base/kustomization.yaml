@@ -7,3 +7,4 @@ resources:
   - externalsecret-db.yaml
   - ingress.yaml
   - hpa-backend.yaml
+  - ../../platform/clustersecretstore.yaml
