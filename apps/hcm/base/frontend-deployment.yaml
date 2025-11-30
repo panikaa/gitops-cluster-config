@@ -16,7 +16,7 @@ spec:
         - name: ghcr-auth
       containers:
         - name: frontend
-          image: ghcr.io/panikaa/hcm-frontend:4b2980de026719379657810f4e317a12c87a45e0
+          image: ghcr.io/panikaa/hcm-frontend:bc0f1f36d4759ade29338561bbe2a292742b7944
           ports:
             - containerPort: 80
           env:
