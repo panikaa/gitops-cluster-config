@@ -2,7 +2,6 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: hcm
-  namespace: hcm
   annotations:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
@@ -10,8 +9,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: prod.hcm.suramar.int
-      http:
+    - http:
         paths:
           - path: /
             pathType: Prefix
