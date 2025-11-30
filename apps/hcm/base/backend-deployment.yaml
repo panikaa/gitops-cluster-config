@@ -16,7 +16,7 @@ spec:
         - name: ghcr-auth
       containers:
       - name: backend
-        image: ghcr.io/panikaa/hcm-backend:bc0f1f36d4759ade29338561bbe2a292742b7944
+        image: ghcr.io/panikaa/hcm-backend:cf5e4697d154e670fe7a4b1f6f3d7c50ca673aba
         command: ["sh", "-c", "npx prisma migrate deploy && npm start"]
         ports:
           - containerPort: 3000
