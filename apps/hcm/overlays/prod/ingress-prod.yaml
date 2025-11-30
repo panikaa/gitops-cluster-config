@@ -9,7 +9,8 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - http:
+    - host: prod.hcm.suramar.int
+      http:
         paths:
           - path: /
             pathType: Prefix
